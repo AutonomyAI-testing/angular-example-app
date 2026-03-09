@@ -1,0 +1,25 @@
+:host {
+  .counter__container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-r-lg);
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-r-2xl);
+    background: var(--page-background);
+    border: 1px solid var(--senary-contrast);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .counter__button {
+    padding: var(--spacing-r-md);
+  }
+
+  .counter__display {
+    min-width: 80px;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-contrast);
+    text-align: center;
+  }
+}
