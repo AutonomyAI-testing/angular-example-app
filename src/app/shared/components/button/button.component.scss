@@ -1,0 +1,146 @@
+:host {
+  .button__container {
+    sl-button::part(base) {
+      display: flex;
+      align-items: center;
+      border: 0;
+      border-radius: var(--border-radius-max);
+      transition: background 0.3s ease;
+    }
+
+    sl-button::part(label) {
+      padding: 0;
+    }
+
+    .button__text {
+      font-family: var(--inter-font), serif;
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-xregular);
+      line-height: var(--line-height-lg);
+      letter-spacing: -0.0088rem;
+    }
+  }
+
+  // Primary variant
+  .button--primary {
+    sl-button::part(base) {
+      padding-block: var(--spacing-r-sm);
+      padding-inline: var(--spacing-r-xl);
+      color: var(--buttons-color);
+      background: var(--buttons-background);
+
+      &:hover:not(:disabled) {
+        background: var(--buttons-background-hover);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // Secondary variant
+  .button--secondary {
+    sl-button::part(base) {
+      padding-block: var(--spacing-r-sm);
+      padding-inline: var(--spacing-r-xl);
+      color: var(--text-color-secondary);
+      background: transparent;
+      border: 1px solid var(--senary-contrast);
+
+      &:hover:not(:disabled) {
+        color: var(--text-color-primary);
+        border-color: var(--primary-contrast);
+        background: transparent;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // Icon variant
+  .button--icon {
+    sl-button::part(base) {
+      padding-inline: 0;
+      font-size: var(--font-size-lg);
+      color: var(--icons-color);
+      background: transparent;
+
+      &:hover:not(:disabled) {
+        color: var(--icons-color-hover);
+        background: transparent;
+        transition: color 0.3s ease;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // As-link variant
+  .button--as-link {
+    sl-button::part(base) {
+      padding: 0;
+      color: var(--text-color-secondary);
+      background: transparent;
+      border: 0;
+
+      &:hover:not(:disabled) {
+        color: var(--text-color-secondary-hover);
+      }
+
+      &:active:not(:disabled) {
+        color: var(--text-color-secondary-hover);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+
+    sl-button::part(label) {
+      font-size: var(--font-size-md);
+    }
+  }
+
+  // Size modifiers
+  .button--sm {
+    sl-button::part(base) {
+      padding-block: var(--spacing-r-xs);
+      padding-inline: var(--spacing-r-md);
+
+      .button__text {
+        font-size: var(--font-size-xs);
+      }
+    }
+  }
+
+  .button--md {
+    sl-button::part(base) {
+      padding-block: var(--spacing-r-sm);
+      padding-inline: var(--spacing-r-xl);
+
+      .button__text {
+        font-size: var(--font-size-sm);
+      }
+    }
+  }
+
+  .button--lg {
+    sl-button::part(base) {
+      padding-block: var(--spacing-r-md);
+      padding-inline: var(--spacing-r-2xl);
+
+      .button__text {
+        font-size: var(--font-size-md);
+      }
+    }
+  }
+}

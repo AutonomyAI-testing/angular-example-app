@@ -1,0 +1,12 @@
+<sl-button
+  [class]="'button__container button--' + variant() + ' button--' + size()"
+  [disabled]="disabled()"
+  [type]="type()"
+  [attr.aria-label]="ariaLabel()"
+  (click)="onClick()"
+>
+  <ng-content />
+  @if (text()) {
+    <span class="button__text" i18n>{{ text() }}</span>
+  }
+</sl-button>
