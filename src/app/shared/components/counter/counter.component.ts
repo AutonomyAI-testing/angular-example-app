@@ -21,4 +21,8 @@ export class CounterComponent {
   decrement() {
     this.count.set(this.count() - 1);
   }
+
+  reset() {
+    this.count.set(0);
+  }
 }

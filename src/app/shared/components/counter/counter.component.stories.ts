@@ -9,7 +9,7 @@ const meta: Meta<CounterComponent> = {
       const result = story();
       return {
         ...result,
-        template: `<div class="theme-light--mode" style="padding: 2rem;">${result.template || '<app-counter></app-counter>'}</div>`,
+        template: `<div class="theme-light--mode" style="padding: 2rem;">${result.template ?? '<app-counter></app-counter>'}</div>`,
       };
     },
   ],

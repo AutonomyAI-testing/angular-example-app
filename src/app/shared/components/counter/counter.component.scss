@@ -13,6 +13,28 @@
 
   .counter__button {
     padding: var(--spacing-r-md);
+
+    &::part(base) {
+      color: var(--brand-color-primary);
+      background-color: color-mix(in srgb, var(--brand-color-primary) 10%, white 2%);
+      border-color: var(--brand-color-primary);
+    }
+
+    &::part(base):hover {
+      background-color: color-mix(in srgb, var(--brand-color-primary) 20%, white 10%);
+    }
+  }
+
+  .counter__button--reset {
+    &::part(base) {
+      color: var(--brand-color-primary);
+      background-color: color-mix(in srgb, var(--brand-color-primary) 10%, white 2%);
+      border-color: var(--brand-color-primary);
+    }
+
+    &::part(base):hover {
+      background-color: color-mix(in srgb, var(--brand-color-primary) 20%, white 10%);
+    }
   }
 
   .counter__display {
