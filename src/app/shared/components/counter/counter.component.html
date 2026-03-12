@@ -1,0 +1,16 @@
+<div class="counter__container">
+  <div class="counter__display">
+    {{ count() }}
+  </div>
+  <div class="counter__controls">
+    <sl-button class="counter__button" (click)="decrement()" aria-label="Decrement counter">
+      −
+    </sl-button>
+    <sl-button class="counter__button" (click)="increment()" aria-label="Increment counter">
+      +
+    </sl-button>
+    <sl-button class="counter__button" (click)="reset()" aria-label="Reset counter to zero">
+      Reset
+    </sl-button>
+  </div>
+</div>
