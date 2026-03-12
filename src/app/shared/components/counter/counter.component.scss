@@ -1,0 +1,47 @@
+:host {
+  .counter__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-r-xl);
+    padding: var(--spacing-r-3xl);
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid var(--senary-contrast);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--card-background);
+    transition: background-color 0.3s ease;
+
+    .counter__display {
+      width: 100%;
+      text-align: center;
+
+      .counter__value {
+        margin: 0;
+        font-size: var(--font-size-4xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--text-color-primary);
+        line-height: var(--line-height-max);
+      }
+    }
+
+    .counter__controls {
+      display: flex;
+      gap: var(--spacing-r-md);
+      width: 100%;
+      justify-content: center;
+
+      .counter__button {
+        flex: 1;
+        min-width: 50px;
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-bold);
+
+        &--reset {
+          flex: 1.5;
+        }
+      }
+    }
+  }
+}
