@@ -1,0 +1,16 @@
+<div class="counter__container">
+  <div class="counter__display">
+    <span class="counter__value">{{ count() }}</span>
+  </div>
+  <div class="counter__controls">
+    <sl-button class="counter__button" variant="default" (click)="decrement()">
+      −
+    </sl-button>
+    <sl-button class="counter__button counter__button--reset" variant="neutral" (click)="reset()">
+      Reset
+    </sl-button>
+    <sl-button class="counter__button" variant="default" (click)="increment()">
+      +
+    </sl-button>
+  </div>
+</div>
