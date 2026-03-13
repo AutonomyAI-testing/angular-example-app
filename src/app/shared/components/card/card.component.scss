@@ -6,18 +6,23 @@
     padding: var(--spacing-r-3xl);
     overflow: hidden;
     color: var(--primary-contrast);
-    border: 1px solid var(--senary-contrast);
-    border-radius: var(--border-radius-sm);
-    transition:
-      border-color 0.3s ease,
-      background-color 0.3s ease;
+    border: 2px solid var(--septenary-contrast);
+    border-radius: var(--border-radius-md);
+    background: var(--page-background);
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 
     &:hover {
       .card__link {
         background-position: 0 0;
       }
 
+      border-color: var(--senary-contrast);
       background: var(--card-background-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
 
     * + *:not(a, code, span),
@@ -25,16 +30,38 @@
       margin-block-end: var(--spacing-r-3xl);
     }
 
+    h3 {
+      font-size: var(--font-size-lg);
+      margin-block-end: var(--spacing-r-2xl);
+      letter-spacing: var(--letter-spacing-md);
+    }
+
+    p {
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-md);
+      color: var(--text-color-secondary);
+      transition: color 0.3s ease;
+    }
+
+    &:hover p {
+      color: var(--text-color-primary);
+    }
+
     .card__link {
       position: relative;
       margin-block: 0;
+      margin-block-start: var(--spacing-r-2xl);
       font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-xregular);
       color: transparent;
       background: var(--card-link-background-hover);
       background-position: 100% 0;
       background-clip: text;
       background-size: 200% 100%;
-      transition: background-position 2s ease-out;
+      transition: background-position 0.3s ease;
+      text-decoration: underline;
+      text-decoration-color: var(--brand-color-tertiary);
+      text-underline-offset: 4px;
     }
   }
 }
