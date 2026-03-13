@@ -142,7 +142,7 @@
             "configDir": ".storybook",
             "browserTarget": "angularexampleapp:build",
             "compodoc": false,
-            "outputDir": "/home/user/.autonomyai/storybook-builds/v1"
+            "outputDir": "/home/user/.autonomyai/storybook-builds/v2"
           }
         }
       },

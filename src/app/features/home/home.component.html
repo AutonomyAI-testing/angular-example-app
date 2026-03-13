@@ -125,6 +125,62 @@
     <div class="real-time__container">
       <p i18n>Users seeing this page: {{ activeUsersResource.value().activeUsers }}</p>
     </div>
+
+    <h2 i18n>Featured Images Gallery</h2>
+    <div class="gallery__container">
+      <div class="gallery__item">
+        <img
+          alt="Gallery image 1"
+          i18n-alt
+          ngSrc="https://picsum.photos/id/10/400/300"
+          width="400"
+          height="300"
+          priority
+        />
+        <div class="gallery__caption">
+          <p i18n>Beautiful Landscape</p>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img
+          alt="Gallery image 2"
+          i18n-alt
+          ngSrc="https://picsum.photos/id/20/400/300"
+          width="400"
+          height="300"
+          priority
+        />
+        <div class="gallery__caption">
+          <p i18n>Nature's Beauty</p>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img
+          alt="Gallery image 3"
+          i18n-alt
+          ngSrc="https://picsum.photos/id/30/400/300"
+          width="400"
+          height="300"
+          priority
+        />
+        <div class="gallery__caption">
+          <p i18n>Mountain Views</p>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img
+          alt="Gallery image 4"
+          i18n-alt
+          ngSrc="https://picsum.photos/id/40/400/300"
+          width="400"
+          height="300"
+          priority
+        />
+        <div class="gallery__caption">
+          <p i18n>Scenic Beauty</p>
+        </div>
+      </div>
+    </div>
   } @placeholder {
     <div class="real-time__container">
       <p i18n>Loading...</p>
