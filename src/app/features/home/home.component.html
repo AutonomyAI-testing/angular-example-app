@@ -19,7 +19,7 @@
   </p>
 
   <p i18n>
-    Whether you’re looking for a boilerplate or a solid base project, this setup is designed to help
+    Whether you're looking for a boilerplate or a solid base project, this setup is designed to help
     you create clean, maintainable code with ease.
   </p>
 
@@ -39,6 +39,43 @@
       height="1152"
       priority
     />
+  </div>
+
+  <!-- Featured Technology Images Section -->
+  <div class="featured-images__container">
+    <div class="featured-image__card">
+      <img
+        src="https://source.unsplash.com/800x600/?angular,web,development"
+        alt="Angular web development"
+        i18n-alt
+        class="featured-image__img"
+      />
+      <div class="featured-image__overlay">
+        <h3 i18n>Modern Web Development</h3>
+      </div>
+    </div>
+    <div class="featured-image__card">
+      <img
+        src="https://source.unsplash.com/800x600/?typescript,coding"
+        alt="TypeScript programming"
+        i18n-alt
+        class="featured-image__img"
+      />
+      <div class="featured-image__overlay">
+        <h3 i18n>TypeScript Excellence</h3>
+      </div>
+    </div>
+    <div class="featured-image__card">
+      <img
+        src="https://source.unsplash.com/800x600/?responsive,design,mobile"
+        alt="Responsive web design"
+        i18n-alt
+        class="featured-image__img"
+      />
+      <div class="featured-image__overlay">
+        <h3 i18n>Responsive Design</h3>
+      </div>
+    </div>
   </div>
 
   @defer (on viewport) {
@@ -65,7 +102,7 @@
         <ng-container ngProjectAs="body">
           <p i18n>Build apps for a global audience.</p>
           <p i18n>
-            Angular’s internationalization tools make it seamless to localize your app, handle
+            Angular's internationalization tools make it seamless to localize your app, handle
             translations, and format dates, numbers, and currencies for any locale.
           </p>
         </ng-container>
@@ -93,7 +130,7 @@
         <ng-container ngProjectAs="body">
           <p i18n>Bring your UI to life with Angular Animations.</p>
           <p i18n>
-            Create smooth transitions and engaging effects with Angular’s powerful animation API,
+            Create smooth transitions and engaging effects with Angular's powerful animation API,
             making your application visually appealing and interactive.
           </p>
         </ng-container>
@@ -102,6 +139,62 @@
         >
       </app-card>
     </div>
+
+    <!-- Inspiration Gallery Section -->
+    <div class="inspiration-gallery__container">
+      <h2 i18n>Inspiration Gallery</h3>
+      <div class="gallery__grid">
+        <div class="gallery__item">
+          <img
+            src="https://source.unsplash.com/400x300/?tech,startup"
+            alt="Tech startup environment"
+            i18n-alt
+            class="gallery__image"
+          />
+        </div>
+        <div class="gallery__item">
+          <img
+            src="https://source.unsplash.com/400x300/?code,developer"
+            alt="Developer working on code"
+            i18n-alt
+            class="gallery__image"
+          />
+        </div>
+        <div class="gallery__item">
+          <img
+            src="https://source.unsplash.com/400x300/?ui,design"
+            alt="UI design workspace"
+            i18n-alt
+            class="gallery__image"
+          />
+        </div>
+        <div class="gallery__item">
+          <img
+            src="https://source.unsplash.com/400x300/?programming,laptop"
+            alt="Programming on laptop"
+            i18n-alt
+            class="gallery__image"
+          />
+        </div>
+        <div class="gallery__item">
+          <img
+            src="https://source.unsplash.com/400x300/?web,development"
+            alt="Web development tools"
+            i18n-alt
+            class="gallery__image"
+          />
+        </div>
+        <div class="gallery__item">
+          <img
+            src="https://source.unsplash.com/400x300/?software,engineer"
+            alt="Software engineering"
+            i18n-alt
+            class="gallery__image"
+          />
+        </div>
+      </div>
+    </div>
+
     <div class="decorative-image__container-1">
       <img
         alt="pokemon charizard"
