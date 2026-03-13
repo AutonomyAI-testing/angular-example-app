@@ -7,38 +7,64 @@ $separator-margin: 0 10px 35px 0;
 :host {
   @include pages.read-page;
 
+  > p {
+    line-height: var(--line-height-lg);
+    font-size: var(--font-size-md);
+
+    margin-block-end: var(--spacing-r-2xl);
+
+    &.text--medium {
+      font-weight: var(--font-weight-xregular);
+      color: var(--text-color-primary);
+      margin-block-end: var(--spacing-r-3xl);
+    }
+  }
+
   .home__heading-kbd {
     margin: var(--spacing-r-md) 0;
   }
 
   .separator__container {
     text-align: center;
-    border-bottom: 1px solid var(--septenary-contrast);
+    border-bottom: 2px solid var(--senary-contrast);
+    padding-block: var(--spacing-r-4xl);
+    margin-block: var(--spacing-r-5xl);
 
     img {
       width: $separator-image-width;
       height: auto;
       margin: $separator-margin;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
     }
+  }
+
+  h2 {
+    margin-block-start: var(--spacing-r-4xl);
+    margin-block-end: var(--spacing-r-3xl);
+    font-size: var(--font-size-xl);
   }
 
   .cards__grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: var(--spacing-r-xxl);
-    margin-block: var(--spacing-r-xl);
-    margin-block-end: var(--spacing-r-5xl);
+    gap: var(--spacing-r-3xl);
+    margin-block: var(--spacing-r-3xl);
+    margin-block-end: var(--spacing-r-6xl);
 
     @include mq.for-tablet-portrait-up {
       grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-r-4xl);
     }
   }
 
   .real-time__container {
-    margin-block-start: var(--spacing-r-5xl);
+    margin-block-start: var(--spacing-r-6xl);
+    padding-block: var(--spacing-r-4xl);
 
     p {
       text-align: center;
+      font-size: var(--font-size-md);
+      color: var(--text-color-secondary);
     }
   }
 
