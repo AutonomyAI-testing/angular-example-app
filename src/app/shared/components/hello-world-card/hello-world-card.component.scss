@@ -1,0 +1,39 @@
+:host {
+  .hello-world-card__container {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-r-3xl);
+    background-color: var(--card-background);
+    border: 1px solid var(--senary-contrast);
+    border-radius: var(--border-radius-sm);
+    transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      background-color: var(--card-background-hover);
+      border-color: var(--tertiary-contrast);
+    }
+
+    .hello-world-card__heading {
+      margin-block-end: var(--spacing-r-2xl);
+
+      h2 {
+        margin: 0;
+        font-size: var(--font-size-lg);
+        font-weight: 600;
+        color: var(--primary-contrast);
+      }
+    }
+
+    .hello-world-card__description {
+      p {
+        margin: 0;
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-md);
+        color: var(--secondary-contrast);
+      }
+    }
+  }
+}

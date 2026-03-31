@@ -26,9 +26,14 @@
             "outputMode": "static",
             "server": "src/main.server.ts",
             "ssr": false,
-            "polyfills": ["@angular/localize/init"],
+            "polyfills": [
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.app.json",
-            "localize": ["es", "en"],
+            "localize": [
+              "es",
+              "en"
+            ],
             "i18nMissingTranslation": "error",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -38,9 +43,14 @@
                 "output": ""
               }
             ],
-            "styles": ["@shoelace-style/shoelace/dist/themes/light.css", "src/styles/global.scss"],
+            "styles": [
+              "@shoelace-style/shoelace/dist/themes/light.css",
+              "src/styles/global.scss"
+            ],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/styles"]
+              "includePaths": [
+                "src/styles"
+              ]
             },
             "budgets": [
               {
@@ -77,14 +87,18 @@
               "outputHashing": "none",
               "optimization": false,
               "sourceMap": true,
-              "localize": ["en"],
+              "localize": [
+                "en"
+              ],
               "budgets": []
             },
             "localhost-es": {
               "outputHashing": "none",
               "optimization": false,
               "sourceMap": true,
-              "localize": ["es"],
+              "localize": [
+                "es"
+              ],
               "budgets": []
             }
           },
@@ -108,7 +122,9 @@
             "buildTarget": "angularexampleapp:build",
             "format": "xlf",
             "outputPath": "src/locale",
-            "targetFiles": ["messages.es.xlf"],
+            "targetFiles": [
+              "messages.es.xlf"
+            ],
             "prettyNestedTags": true,
             "sort": "stableAppendNew"
           }
@@ -124,7 +140,41 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html", "scripts/**/*.js"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html",
+              "scripts/**/*.js"
+            ]
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": ".storybook",
+            "browserTarget": "angularexampleapp:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "."
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": ".storybook",
+            "browserTarget": "angularexampleapp:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "."
+            ],
+            "outputDir": "storybook-static"
           }
         }
       },
@@ -144,7 +194,9 @@
   },
   "cli": {
     "analytics": "49e1320d-9031-4d19-bb7c-2d84a0f2fd49",
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   },
   "schematics": {
     "@schematics/angular:component": {
